@@ -57,6 +57,7 @@ public class SongScoreService {
   }
 
   public Mono<Upload> submitAndUploadToSongScore(UploadEvent uploadEvent) {
+    log.debug("UploadEvent:payload for song - {}", uploadEvent.getPayload());
     return ariaClient
         .submitPayload(uploadEvent.getStudyId(), uploadEvent.getPayload())
         .flatMap(

@@ -50,3 +50,8 @@ management:
   endpoint:
     health:
       show-details: NEVER
+
+tsv:
+  multiTagDelimiter: ";"
+  columnKeys: anatomical part,purpose of sequencing
+  

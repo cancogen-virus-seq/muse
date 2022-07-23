@@ -14,6 +14,7 @@ public class TsvFieldSchema {
 
   public enum ValueType {
     string,
-    number
+    number,
+    array
   }
 }
